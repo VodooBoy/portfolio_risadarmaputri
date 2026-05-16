@@ -108,7 +108,7 @@ export default function AboutPage() {
 
             {/* Download CV — opsional */}
             <a
-              href="/cv-Risa Darma Putri-pratama.pdf"
+              href="/cv-Risa Darma Putri.pdf"
               className="inline-flex items-center gap-2 mt-8 px-4 py-2 border border-border rounded-lg text-[12px] text-muted hover:text-ink hover:border-ink/30 transition-colors"
             >
               ↓ Download CV

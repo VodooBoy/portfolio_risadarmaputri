@@ -2,7 +2,7 @@ import PublicLayout from "@/components/layout/PublicLayout";
 import ContactForm from "@/components/ui/ContactForm";
 
 const contactInfo = [
-  { icon: "📧", label: "Email", value: "Risa Darma Putri@email.com" },
+  { icon: "📧", label: "Email", value: "risa@risadarmaputri.com" },
   { icon: "📱", label: "WhatsApp", value: "+62 812-3456-7890" },
   { icon: "🔗", label: "Behance", value: "behance.net/Risa Darma Putripratama" },
   { icon: "📍", label: "Lokasi", value: "Jakarta, Indonesia" },
