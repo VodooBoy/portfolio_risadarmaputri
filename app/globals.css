@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Warna Default (Light Mode) */
+  :root {
+    --accent: #E07B39;
+    --accent-light: #F5956A;
+    --accent-dark: #B5602B;
+    --ink: #1A1A1A;
+    --paper: #FAFAF8;
+    --muted: #6B6B6B;
+    --border: #E5E5E3;
+  }
+
+  /* Warna Saat Dark Mode Aktif */
+  .dark {
+    --accent: #E07B39;
+    --accent-light: #F5956A;
+    --accent-dark: #B5602B;
+    --ink: #FAFAF8;     /* Teks menjadi terang */
+    --paper: #1A1A1A;   /* Latar menjadi gelap */
+    --muted: #A3A3A3;
+    --border: #333333;
+  }
+}
