@@ -45,14 +45,14 @@ export default function PortfolioClient({ projects }: { projects: Project[] }) {
           </button>
         ))}
         <span className="ml-auto text-[12px] text-muted self-center">
-          {filtered.length}aryaDarma Putri
+          {filtered.length}Karya
         </span>
       </div>
 
       {/* Grid */}
       {filtered.length === 0 ? (
         <div className="text-center py-20 text-muted text-[14px]">
-          Belum adaaryaDarma Putri di kategori ini.
+          Belum adaKarya di kategori ini.
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">

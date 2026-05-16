@@ -21,7 +21,7 @@ export default async function PortfolioPage() {
       <section className="max-w-5xl mx-auto px-6 py-16">
         <div className="mb-12">
           <p className="text-[12px] tracking-[2px] uppercase text-accent font-medium mb-3">
-          KaryaDarma Putri Saya
+          Karya Saya
           </p>
           <h1 className="text-[36px] font-semibold tracking-tight text-ink">
             Portfolio

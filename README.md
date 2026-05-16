@@ -104,8 +104,8 @@ Websitemu sudah live di `https://nama-project.vercel.app`
 
 1. Buka `https://websitemu.vercel.app/admin/login`
 2. Login dengan email + password yang dibuat di Step 3
-3. Klik **"UploadaryaDarma Putri"** untuk tambah project baru
-4. Klik **"KelolaaryaDarma Putri"** untuk edit atau hapus project
+3. Klik **"Upload Karya"** untuk tambah project baru
+4. Klik **"Kelola Karya"** untuk edit atau hapus project
 5. Check **"Featured"** saat upload untuk tampil di Home
 
 ---
@@ -139,7 +139,7 @@ Cari dan ganti teks-teks berikut di file yang sesuai:
 ## ⚡ Tips Performa
 
 - Gambar otomatis dioptimasi oleh Next.js Image (`<Image />`)
-- Halaman portfolio di-cache 60 detik — tetap cepat meski banyakaryaDarma Putri
+- Halaman portfolio di-cache 60 detik — tetap cepat meski banyak Karya
 - Font Poppins di-load dari Google Fonts dengan optimasi Next.js
 - Tailwind CSS di-purge otomatis saat build — CSS sangat kecil
 

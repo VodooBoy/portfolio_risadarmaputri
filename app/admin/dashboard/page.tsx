@@ -104,7 +104,7 @@ export default function AdminDashboard() {
   }
 
   async function handleDelete(id: string, imageUrl: string) {
-    if (!confirm("HapusaryaDarma Putri ini? Tindakan tidak bisa dibatalkan.")) return;
+    if (!confirm("Hapus Karya? Tindakan tidak bisa dibatalkan.")) return;
 
     // Hapus gambar dari storage
     if (imageUrl) {
@@ -151,8 +151,8 @@ export default function AdminDashboard() {
 
   const navItems: { id: Section; label: string; icon: string }[] = [
     { id: "dashboard", label: "Dashboard", icon: "📊" },
-    { id: "upload", label: "UploadaryaDarma Putri", icon: "➕" },
-    { id: "manage", label: "KelolaaryaDarma Putri", icon: "🗂️" },
+    { id: "upload", label: "UploadKarya", icon: "➕" },
+    { id: "manage", label: "KelolaKarya", icon: "🗂️" },
     { id: "settings", label: "Pengaturan", icon: "⚙️" },
   ];
 
@@ -211,7 +211,7 @@ export default function AdminDashboard() {
               Dashboard
             </h1>
             <p className="text-[13px] text-muted mb-8">
-              RingkasanaryaDarma Putri dan aktivitas website kamu.
+              RingkasanKarya dan aktivitas website kamu.
             </p>
 
             {/* Stats */}
@@ -235,7 +235,7 @@ export default function AdminDashboard() {
             {/* Recent */}
             <div>
               <p className="text-[11px] uppercase tracking-widest text-muted mb-4">
-              KaryaDarma Putri Terbaru
+              KKarya Terbaru
               </p>
               <div className="space-y-2">
                 {projects.slice(0, 5).map((p) => (
@@ -264,7 +264,7 @@ export default function AdminDashboard() {
                 ))}
                 {projects.length === 0 && !loading && (
                   <div className="text-center py-12 text-[13px] text-muted border border-dashed border-border rounded-xl">
-                    Belum adaaryaDarma Putri. Klik "UploadaryaDarma Putri" untuk mulai.
+                    Belum adaKarya. Klik "UploadKarya" untuk mulai.
                   </div>
                 )}
               </div>
@@ -276,7 +276,7 @@ export default function AdminDashboard() {
         {section === "upload" && (
           <div>
             <h1 className="text-[22px] font-semibold tracking-tight mb-1">
-              UploadaryaDarma Putri Baru
+              UploadKarya Baru
             </h1>
             <p className="text-[13px] text-muted mb-8">
               Isi semua field di bawah, lalu klik Upload.
@@ -286,7 +286,7 @@ export default function AdminDashboard() {
               {/* Upload zone */}
               <div>
                 <label className="block text-[12px] text-muted mb-1.5">
-                  GambararyaDarma Putri
+                  GambarKarya
                 </label>
                 <div
                   className="border-2 border-dashed border-border rounded-xl p-8 text-center cursor-pointer hover:border-accent transition-colors"
@@ -323,7 +323,7 @@ export default function AdminDashboard() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label className="block text-[12px] text-muted mb-1.5">
-                    JudularyaDarma Putri *
+                    JudulKarya *
                   </label>
                   <input
                     name="title"
@@ -375,7 +375,7 @@ export default function AdminDashboard() {
                 disabled={uploading}
                 className="px-6 py-2.5 bg-accent text-white rounded-lg text-[13px] font-medium hover:bg-accent-dark transition-colors disabled:opacity-60"
               >
-                {uploading ? "Mengupload..." : "UploadaryaDarma Putri →"}
+                {uploading ? "Mengupload..." : "UploadKarya →"}
               </button>
             </form>
           </div>
@@ -387,10 +387,10 @@ export default function AdminDashboard() {
             <div className="flex items-center justify-between mb-8">
               <div>
                 <h1 className="text-[22px] font-semibold tracking-tight mb-1">
-                  KelolaaryaDarma Putri
+                  KelolaKarya
                 </h1>
                 <p className="text-[13px] text-muted">
-                  {projects.length}aryaDarma Putri tersimpan
+                  {projects.length}Karya tersimpan
                 </p>
               </div>
               <button
@@ -405,12 +405,12 @@ export default function AdminDashboard() {
               <p className="text-[13px] text-muted">Memuat...</p>
             ) : projects.length === 0 ? (
               <div className="text-center py-16 border border-dashed border-border rounded-xl">
-                <p className="text-[13px] text-muted">Belum adaaryaDarma Putri.</p>
+                <p className="text-[13px] text-muted">Belum adaKarya.</p>
                 <button
                   onClick={() => setSection("upload")}
                   className="mt-3 text-[12px] text-accent hover:underline"
                 >
-                  UploadaryaDarma Putri pertama →
+                  UploadKarya pertama →
                 </button>
               </div>
             ) : (
@@ -528,7 +528,7 @@ export default function AdminDashboard() {
             className="bg-white rounded-2xl p-6 w-full max-w-md"
             onClick={(e) => e.stopPropagation()}
           >
-            <h3 className="text-[16px] font-semibold mb-4">EditaryaDarma Putri</h3>
+            <h3 className="text-[16px] font-semibold mb-4">EditKarya</h3>
             <form onSubmit={handleEdit} className="space-y-4">
               <div>
                 <label className="block text-[12px] text-muted mb-1.5">
